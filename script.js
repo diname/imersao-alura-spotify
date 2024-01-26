@@ -7,6 +7,7 @@ function requestApi(searchTerm) {
   fetch(url)
     .then((response) => response.json())
     .then((result) => displayResults(result))
+  console.log(url)
 }
 
 function displayResults(result) {
@@ -20,6 +21,7 @@ function displayResults(result) {
   })
 
   resultArtist.classList.remove('hidden')
+  console.log(resultArtist)
 }
 
 document.addEventListener('input', function () {
